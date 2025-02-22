@@ -87,7 +87,7 @@ print(math.sqrt(16))
 # 3. syntax of alias:
 # import module_name as alias_name
 '''import math as m
-print(m.sqrt(16))'''
+print(m.sqrt(16))''' 
 
 
 
