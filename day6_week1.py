@@ -51,7 +51,18 @@ except FileNotFoundError:
     print("File Not Found")
 '''
 
+
+# Append the content 
+'''
+try:
+    with open("sample.txt","a") as file:
+        file.write("I am from Pakistan")
+except FileNotFoundError:
+    print("File Not Found")
+'''    
 # Exercise -->count the words in a file 
+
+'''
 def line_and_word_count(file_name):
     try:
         with open(file_name, "r") as file:
@@ -65,3 +76,43 @@ def line_and_word_count(file_name):
         print("File not found ")
 
 line_and_word_count("sample.txt")
+
+'''
+
+# Exercise two -->write the list of items in a file
+Student=[["Usman","Waris","Ali","Ahmed"],["104","105","106","107"]]
+def write_list(file_name,lists):
+    with open(file_name,"a") as file:
+        for list in lists:
+            for item in list:
+                file.write(item)
+                file.write("\n")
+
+def display(file_name):
+    with open(file_name,"r") as file:
+        print(file.read())
+
+def copy_file(file_name1,file_name2):
+    with open(file_name1,"r") as file1:
+        with open(file_name2,"a") as file2:
+            file2.write(file1.read())
+
+def occurence(file_name):
+    with open(file_name,"r") as file:
+        content=file.read()
+        print(content)
+        print(content.count("Usman"))
+def log_message(file_name,message):
+    with open(file_name,"a") as file:
+        file.write(message)
+        file.write("\n")
+                
+                
+write_list("student.txt",Student)
+display("student.txt")
+copy_file("student.txt","student1.txt")
+
+        
+                
+
+
