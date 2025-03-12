@@ -38,5 +38,14 @@ arr[arr>2]=0
 print("Modified array: ", arr)
 
 
+# Random number 
+np.random.seed(42)  # tgis is very useful in modeel trainnig they ensure the result are from only dataset , result are not changing/out of context
+random_array = np.random.rand(5)  # Generates 5 random floats
+print(random_array)
 
+random_int = np.random.randint(1, 100)  # Generates a random integer between 1 and 99
+print(random_int)
+
+random_int_array = np.random.randint(1, 100, size=(3, 3))  # 3x3 matrix of random integers
+print(random_int_array)
 

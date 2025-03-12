@@ -34,12 +34,18 @@ expanded=arr[:, np.newaxis]
 
 # Mathmatical operation
 # Create the array using numpy
-arr=np.array([1,2,3])
+arr=np.array([4,16,32])
 arr1=np.array([4,5,6])
 
 # numpy is useful -->reason is that we add , multiply directly without using loop
 add_array=arr+arr1
 print(add_array)
+print(np.sqrt(arr))
+print(np.max(arr))
+
+
+# indexing and slicing 
+
 
 
 
