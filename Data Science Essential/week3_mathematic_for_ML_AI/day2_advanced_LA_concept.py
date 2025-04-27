@@ -32,3 +32,13 @@ U, S, Vt= np.linalg.svd(matrix)
 print("U: \n ", U)
 print("S: \n ", S)
 print("Vt: \n ", Vt)
+
+
+# Reconstruct 
+sigma= np.zeros([3,3])
+np.fill_diagonal(sigma, S)
+reconstruct= U @ sigma @ Vt
+print("Reconstruct matrix: \n :", reconstruct)
+
+
+ 
