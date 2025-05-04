@@ -75,3 +75,28 @@ print("Optimized parameters:", optimized_theta)
 
 
 
+
+# use sympy to compute the second order derivative (Hessian matrix)
+import sympy as sp
+
+# Define the symbol
+x = sp.Symbol('x')
+
+# Define the function
+f = x**3 + 2*x**2 + x
+
+# First derivative
+f_prime = sp.diff(f, x)
+
+# Second derivative
+f_double_prime = sp.diff(f_prime, x)
+
+# Print results
+print("Original function f(x):", f)
+print("First derivative f'(x):", f_prime)
+print("Second derivative f''(x):", f_double_prime)
+
+
+
+
+
