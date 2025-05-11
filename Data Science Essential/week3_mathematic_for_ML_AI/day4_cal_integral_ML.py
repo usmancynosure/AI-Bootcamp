@@ -45,7 +45,12 @@ updates model parameters using a single training example (or a small batch),
 instead of the entire dataset.
 
 '''
-
+'''
+Variant of SDG
+    -Mini-Bactch SDG (update parameter using small batches)
+    -momemtum (which add the fraction of prevoius update to the current update to accelerate the convertion)
+    -Adam Optimizer (use quite alot it combine momemtum with adaption learning rates with faster conversion )
+'''
 
 
 
