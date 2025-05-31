@@ -1,0 +1,53 @@
+==================================================
+SAMPLING ANALYSIS REPORT
+==================================================
+Generated on: 2025-05-31 11:38:19
+Population Size: 10000
+Population Mean: 99.82
+Population Std: 15.03
+
+==================================================
+
+Sample Size: 30
+------------------------------
+Mean of Sample Means: 100.07
+Std of Sample Means: 2.84
+CI Coverage Rate: 97.0%
+Bias: 0.25
+Mean Squared Error: 8.10
+
+Sample Size: 100
+------------------------------
+Mean of Sample Means: 99.89
+Std of Sample Means: 1.59
+CI Coverage Rate: 95.0%
+Bias: 0.07
+Mean Squared Error: 2.52
+
+Sample Size: 500
+------------------------------
+Mean of Sample Means: 99.78
+Std of Sample Means: 0.61
+CI Coverage Rate: 96.0%
+Bias: -0.04
+Mean Squared Error: 0.37
+
+Sample Size: 1000
+------------------------------
+Mean of Sample Means: 99.83
+Std of Sample Means: 0.46
+CI Coverage Rate: 94.0%
+Bias: 0.01
+Mean Squared Error: 0.21
+
+==================================================
+
+Key Findings:
+1. As sample size increases:
+   - Standard error decreases
+   - Confidence intervals become narrower
+   - Coverage rate approaches 95%
+2. The Central Limit Theorem is demonstrated by:
+   - Sample means following normal distribution
+   - Mean of sample means approaching population mean
+   - Decreasing standard error with larger samples
